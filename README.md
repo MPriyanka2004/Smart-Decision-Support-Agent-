@@ -53,14 +53,15 @@ Utility logic and tests are implemented as Databricks notebooks and reused using
 ### 01_Data_Loading_and_Silver_Gold
 Purpose: Ingestion + Exploratory Data Analysis + Silver layer
 
-      Loads CSV data and creates the Bronze table
-      Performs EDA on Bronze data:
-      Data volume and granularity
-      Date range and coverage
-      Missing value checks
-      Revenue and units sold distributions
-      Region, category, store-size analysis
-      Promotion and holiday impact
+Loads CSV data and creates the Bronze table
+Performs EDA on Bronze data:
+Data volume and granularity
+Date range and coverage
+Missing value checks
+Revenue and units sold distributions
+Region, category, store-size analysis
+Promotion and holiday impact
+
 Documents EDA insights using markdown
 Creates the Silver table with cleaned and enriched fields
 EDA results are exploratory and not persisted as tables.
