@@ -2,15 +2,22 @@
 
 ## Overview
 This project implements a Smart Decision Support Agent for a Consumer Packaged Goods (CPG) business using Azure Databricks.
+
 It ingests multi-store, multi-SKU sales data, performs Exploratory Data Analysis (EDA), builds Bronze–Silver–Gold data layers, simulates business scenarios, and provides natural-language insights via a CLI-based agent.
+
 The project is implemented entirely using Databricks notebooks, following Databricks-native best practices.
 
 ## Objectives
 Ingest historical CPG sales data
+
 Perform EDA to understand data quality and business patterns
+
 Build Silver and Gold analytical layers
+
 Simulate “what-if” business scenarios (price hikes, promotions)
+
 Enable NLP-based decision support using an agent loop
+
 Validate the pipeline using notebook-based tests
 
 ## Architecture
@@ -58,29 +65,45 @@ Loads CSV data and creates the Bronze table
 Performs EDA on Bronze data:
 
 Data volume and granularity
+
 Date range and coverage
+
 Missing value checks
+
 Revenue and units sold distributions
+
 Region, category, store-size analysis
+
 Promotion and holiday impact
 
 Documents EDA insights using markdown
+
 Creates the Silver table with cleaned and enriched fields
+
 EDA results are exploratory and not persisted as tables.
 
 ### 02_Trend_Anomaly_Detection
 Purpose: Analytics and Gold layer creation
+
 Builds Gold tables from Silver:
+
       Monthly sales trends
+
       Promotion impact analysis
+      
       Region and category performance
+      
 Validates seasonality and trend behavior
 
 ### 03_Scenario_Simulation
 Purpose: What-if business simulations
+
 Simulates scenarios such as:
-      Price hike with demand drop
+
+    Price hike with demand drop
+      
 Uses Silver data
+
 Focuses only on business impact modeling
 
 ### 04_Agent_Loop_Prototype
