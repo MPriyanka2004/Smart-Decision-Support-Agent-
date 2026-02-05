@@ -54,7 +54,9 @@ Utility logic and tests are implemented as Databricks notebooks and reused using
 Purpose: Ingestion + Exploratory Data Analysis + Silver layer
 
 Loads CSV data and creates the Bronze table
+
 Performs EDA on Bronze data:
+
 Data volume and granularity
 Date range and coverage
 Missing value checks
